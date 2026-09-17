@@ -75,8 +75,7 @@ code { font-size: 13px; word-break: break-all; }
   var android = /Android/i.test(ua);
   var ios = /iPhone|iPad|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
   var mac = /Macintosh/.test(ua) && !ios;
-  // 카톡 인앱 브라우저는 .ics 를 캘린더로 넘기지 못한다 → 시스템 브라우저(Safari·Chrome)로 자동 이동.
-  // iOS·Android 공통 kakaotalk://web/openExternal, Android 는 Chrome intent 로 (burndogfather.com/271 · 2023-09).
+  // 카톡 인앱 브라우저는 .ics 를 글자로 보여 준다(devtalk 67176) → 참석을 누르면 Safari·Chrome 으로 여는 버튼을 낸다.
   // 안드로이드 intent 주소는 '#' 을 자기 것으로 쓰므로, 일정 앵커(#id)는 ?e=id 로 바꿔 넘기고 아래에서 되살린다.
   var inKakao = /KAKAOTALK/i.test(ua);
   var em = /[?&]e=([^&]+)/.exec(location.search), wantYes = /[?&]yes=1/.test(location.search);
