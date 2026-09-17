@@ -93,7 +93,7 @@ code { font-size: 13px; word-break: break-all; }
     function paint(choice) {
       yes.classList.toggle("on", choice === "yes"); no.classList.toggle("on", choice === "no");
       st.hidden = !choice;
-      st.textContent = choice === "yes" ? "참석으로 표시했어요. 캘린더 화면이 뜨면 추가를 눌러 주세요." : choice === "no" ? "불참으로 표시했어요." : "";
+      st.textContent = choice === "yes" ? ((ios || mac) ? "참석으로 표시했어요. 캘린더 화면이 뜨면 맨 아래 'Add To Calendar'(캘린더에 추가)를 누르세요. 위쪽 파란 체크는 닫기예요." : "참석으로 표시했어요. 캘린더 화면이 뜨면 저장을 누르세요.") : choice === "no" ? "불참으로 표시했어요." : "";
     }
     paint(load(key));
     var nameInput = ev.querySelector("input.name");
