@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sungjin-Church//hevrat calendar//KO
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:헤브라트
+X-WR-TIMEZONE:Asia/Seoul
+REFRESH-INTERVAL;VALUE=DURATION:PT1H
+X-PUBLISHED-TTL:PT1H
+BEGIN:VEVENT
+UID:2026-12-05-year-end@hevrat
+DTSTAMP:20260917T111041Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:헤브라트 송년회 (사당 미션 레이스)
+LOCATION:사당역 일대 (집결 장소 추후 공지)
+DESCRIPTION:예시(종일 일정 — start 에 날짜만). 시간이 정해
+ 지면 2026-12-05T13:00 처럼 시각을 붙이면 됩니다. 구독한 
+ 사람은 자동 반영.
+URL:https://chobyeongjun.github.io/hevrat-cal/#2026-12-05-year-end
+END:VEVENT
+END:VCALENDAR
