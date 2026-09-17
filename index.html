@@ -19,7 +19,7 @@ code { font-size: 13px; word-break: break-all; }
 .kakao .note { display: block; }
 .past { opacity: .55; }
 </style></head><body><main>
-<h1>헤브라트 일정</h1><p class=sub>버튼을 누르면 내 캘린더에 들어갑니다. 9월 17일 20:10 기준</p>
+<h1>헤브라트 일정</h1><p class=sub>버튼을 누르면 내 캘린더에 들어갑니다. 9월 17일 20:12 기준</p>
 <div class=note>카카오톡 안에서 열려서 Safari·Chrome 으로 자동으로 넘어갑니다. 안 넘어가면 오른쪽 위 <b>⋯</b> → <b>다른 브라우저로 열기</b>를 눌러 주세요.</div>
 <section class="ev" id="2026-09-20-praise-worship">
   <h2>찬양예배 (헤브라트)</h2>
@@ -55,10 +55,14 @@ code { font-size: 13px; word-break: break-all; }
   var mac = /Macintosh/.test(ua) && !ios;
   // 카톡 인앱 브라우저는 .ics 를 캘린더로 넘기지 못한다 → 시스템 브라우저(Safari·Chrome)로 자동 이동.
   // iOS·Android 공통 kakaotalk://web/openExternal, Android 는 Chrome intent 로 (burndogfather.com/271 · 2023-09).
+  // 안드로이드 intent 주소는 '#' 을 자기 것으로 쓰므로, 일정 앵커(#id)는 ?e=id 로 바꿔 넘기고 아래에서 되살린다.
+  var em = /[?&]e=([^&]+)/.exec(location.search);
+  if (em && !location.hash) location.hash = decodeURIComponent(em[1]);
   if (/KAKAOTALK/i.test(ua)) {
-    var here = location.href;
+    var here = location.href, plain = here.split("#")[0], frag = here.split("#")[1] || "";
+    var noHash = frag ? plain + (plain.indexOf("?") > -1 ? "&" : "?") + "e=" + encodeURIComponent(frag) : plain;
     var target = android
-      ? "intent://" + here.replace(/^https?:\/\//, "") + "#Intent;scheme=https;package=com.android.chrome;end"
+      ? "intent://" + noHash.replace(/^https?:\/\//, "") + "#Intent;scheme=https;package=com.android.chrome;end"
       : "kakaotalk://web/openExternal?url=" + encodeURIComponent(here);
     document.documentElement.setAttribute("data-escape", target);  // 실측용 표식
     document.body.classList.add("kakao");                            // 자동 이동이 막혔을 때의 안내
