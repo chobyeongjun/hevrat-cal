@@ -9,14 +9,12 @@ REFRESH-INTERVAL;VALUE=DURATION:PT1H
 X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
 UID:2026-09-20-praise-worship@hevrat
-DTSTAMP:20260917T113100Z
+DTSTAMP:20260917T113831Z
 DTSTART:20260920T073000Z
 DTEND:20260920T090000Z
 SUMMARY:찬양예배 (헤브라트)
 LOCATION:성진교회 본당
-DESCRIPTION:예시 일정입니다 — 실제 시간·장소로 바꾸세
- 요. 9/20 찬양예배 콘티는 단톡방 공지 참고.
-URL:https://chobyeongjun.github.io/hevrat-cal/#2026-09-20-praise-worship
+DESCRIPTION:콘티는 단톡방 공지 참고.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:찬양예배 (헤브라트)
@@ -30,15 +28,13 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-05-year-end@hevrat
-DTSTAMP:20260917T113100Z
+DTSTAMP:20260917T113831Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:헤브라트 송년회 (사당 미션 레이스)
 LOCATION:사당역 일대 (집결 장소 추후 공지)
-DESCRIPTION:예시(종일 일정 — start 에 날짜만). 시간이 정해
- 지면 2026-12-05T13:00 처럼 시각을 붙이면 됩니다. 구독한 
- 사람은 자동 반영.
-URL:https://chobyeongjun.github.io/hevrat-cal/#2026-12-05-year-end
+DESCRIPTION:시간·집결 장소는 정해지면 단톡방에 올립니다
+ .
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:헤브라트 송년회 (사당 미션 레이스)
