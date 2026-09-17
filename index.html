@@ -89,13 +89,8 @@ code { font-size: 13px; word-break: break-all; }
     return android ? "intent://" + url.replace(/^https?:\/\//, "") + "#Intent;scheme=https;package=com.android.chrome;end"
                    : "x-safari-" + url;
   }
-  if (inKakao) {
+  if (inKakao) {  // 자동 이동은 하지 않는다 — 실패하면 오류 화면만 남는다. 참석을 눌렀을 때 버튼으로 나간다
     document.body.classList.add("kakao");
-    if (!wantYes) {  // 처음 열렸을 때 한 번 자동 이동을 시도한다 (카카오 비공식 — 되는 기기도, 안 되는 기기도 있다)
-      var target = android ? escapeUrl(location.href.split("#")[0]) : "kakaotalk://web/openExternal?url=" + encodeURIComponent(location.href);
-      document.documentElement.setAttribute("data-escape", target);
-      location.href = target;
-    }
   } else if (/Instagram|FBAN|FBAV|NAVER\(inapp/i.test(ua)) {
     document.body.classList.add("kakao");
   }
