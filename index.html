@@ -83,8 +83,11 @@ code { font-size: 13px; word-break: break-all; }
     if (!RSVP_URL) return;
     try { fetch(RSVP_URL, { method: "POST", mode: "no-cors", body: JSON.stringify(body) }); } catch (e) {}
   }
-  function addToCalendar(ev) {  // 참석일 때만. 버튼 없이 기기에 맞는 길로 바로 간다 (아이폰·맥·그 밖 → .ics, 안드로이드 → 구글 캘린더)
-    var href = android ? ev.getAttribute("data-google") : ev.getAttribute("data-ics");
+  function androidCalendarUrl(link) {  // 구글 캘린더 앱을 바로 연다(카톡 인앱·Chrome 모두 intent 를 앱으로 넘긴다). 앱이 없으면 웹 주소로
+    return "intent://" + link.replace(/^https?:\/\//, "") + "#Intent;scheme=https;package=com.google.android.calendar;S.browser_fallback_url=" + encodeURIComponent(link) + ";end";
+  }
+  function addToCalendar(ev) {  // 참석일 때만. 버튼 없이 기기에 맞는 길로 바로 간다 (아이폰·맥·그 밖 → .ics, 안드로이드 → 구글 캘린더 앱)
+    var href = android ? androidCalendarUrl(ev.getAttribute("data-google")) : ev.getAttribute("data-ics");
     document.documentElement.setAttribute("data-add", href);  // 실측용 표식
     location.href = href;
   }
