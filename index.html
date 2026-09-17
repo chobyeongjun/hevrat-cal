@@ -25,11 +25,12 @@ code { font-size: 13px; word-break: break-all; }
 .btns { margin-top: .5rem; }
 .escape { margin-top: .6rem; padding: .7rem .8rem; background: #fff6d6; border: 1px solid #e0c85a; font-size: 14px; }
 .escape p { margin: 0 0 .5rem; } .escape .btn { margin-bottom: .45rem; } .escape .sm { margin: 0; color: #555; }
+.btn.go { background: var(--yellow); }
 .name { display: block; margin-top: .6rem; font-size: 14px; } .name input { width: 100%; font: inherit; padding: .5rem; border: 1px solid var(--line); margin-top: .2rem; }
 </style></head><body><main>
-<h1>헤브라트 일정</h1><p class=sub>참석을 누르면 내 캘린더에 들어갑니다. 9월 17일 20:38 기준</p>
+<h1>헤브라트 일정</h1><p class=sub>참석을 누르면 내 폰 캘린더에 들어갑니다. 아이폰은 캘린더 앱, 안드로이드는 구글 캘린더. 9월 17일 20:38 기준</p>
 <div class=note>카톡 안에서 열렸어요. 참석을 누르면 Safari·Chrome 으로 여는 버튼이 나옵니다.</div>
-<section class="ev" id="2026-09-20-praise-worship">
+<section class="ev" id="2026-09-20-praise-worship" data-ics="2026-09-20-praise-worship.ics" data-google="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=%EC%B0%AC%EC%96%91%EC%98%88%EB%B0%B0%20%28%ED%97%A4%EB%B8%8C%EB%9D%BC%ED%8A%B8%29&amp;dates=20260920T073000Z/20260920T090000Z&amp;ctz=Asia/Seoul&amp;location=%EC%84%B1%EC%A7%84%EA%B5%90%ED%9A%8C%20%EB%B3%B8%EB%8B%B9&amp;details=%EC%BD%98%ED%8B%B0%EB%8A%94%20%EB%8B%A8%ED%86%A1%EB%B0%A9%20%EA%B3%B5%EC%A7%80%20%EC%B0%B8%EA%B3%A0.">
   <h2>찬양예배 (헤브라트)</h2>
   <div class=when>9월 20일 (일) 16:30 – 18:00</div>
   <div class=where>성진교회 본당</div>
@@ -37,16 +38,10 @@ code { font-size: 13px; word-break: break-all; }
   
   <div class=rsvp><button class="btn yes" type=button>참석</button><button class="btn no" type=button>불참</button></div>
   <p class=state hidden></p>
-  <div class=escape hidden><p>카톡 안에서는 캘린더 창이 안 떠요. 아래 버튼으로 한 번만 열어 주세요. 열리면 바로 캘린더 창이 뜹니다.</p>
+  <div class=escape hidden><p>카톡 안에서는 캘린더가 안 열려요. 아래 버튼으로 한 번만 열어 주세요. 열리면 바로 캘린더 화면이 뜹니다.</p>
     <a class="btn main go" href="#">Safari에서 열기</a>
-    <a class="btn google2" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=%EC%B0%AC%EC%96%91%EC%98%88%EB%B0%B0%20%28%ED%97%A4%EB%B8%8C%EB%9D%BC%ED%8A%B8%29&amp;dates=20260920T073000Z/20260920T090000Z&amp;ctz=Asia/Seoul&amp;location=%EC%84%B1%EC%A7%84%EA%B5%90%ED%9A%8C%20%EB%B3%B8%EB%8B%B9&amp;details=%EC%BD%98%ED%8B%B0%EB%8A%94%20%EB%8B%A8%ED%86%A1%EB%B0%A9%20%EA%B3%B5%EC%A7%80%20%EC%B0%B8%EA%B3%A0." target="_blank" rel="noopener">구글 캘린더로 바로 넣기<small>구글 계정이 있으면 카톡 안에서도 됩니다</small></a>
-    <p class=sm>안 되면 오른쪽 위 <b>⋯</b> → <b>다른 브라우저로 열기</b>를 눌러 주세요. 그러면 이어서 진행됩니다.</p></div>
-  <div class=btns hidden>
-    <a class="btn apple" href="2026-09-20-praise-worship.ics">아이폰 · 맥 캘린더<small>'Add To Calendar' 를 누르면 끝 · 알림 포함</small></a>
-    <a class="btn google" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=%EC%B0%AC%EC%96%91%EC%98%88%EB%B0%B0%20%28%ED%97%A4%EB%B8%8C%EB%9D%BC%ED%8A%B8%29&amp;dates=20260920T073000Z/20260920T090000Z&amp;ctz=Asia/Seoul&amp;location=%EC%84%B1%EC%A7%84%EA%B5%90%ED%9A%8C%20%EB%B3%B8%EB%8B%B9&amp;details=%EC%BD%98%ED%8B%B0%EB%8A%94%20%EB%8B%A8%ED%86%A1%EB%B0%A9%20%EA%B3%B5%EC%A7%80%20%EC%B0%B8%EA%B3%A0." target="_blank" rel="noopener">구글 캘린더<small>안드로이드 · 알림은 저장 전에 추가</small></a>
-    <a class="btn other" href="2026-09-20-praise-worship.ics" download="2026-09-20-praise-worship.ics">.ics 파일<small>삼성 캘린더 · 아웃룩 · 알림 포함</small></a>
-  </div>
-</section><section class="ev" id="2026-12-05-year-end">
+    <p class=sm>안 되면 오른쪽 위 <b>⋯</b> → <b>다른 브라우저로 열기</b>. 그러면 이어서 진행됩니다.</p></div>
+</section><section class="ev" id="2026-12-05-year-end" data-ics="2026-12-05-year-end.ics" data-google="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=%ED%97%A4%EB%B8%8C%EB%9D%BC%ED%8A%B8%20%EC%86%A1%EB%85%84%ED%9A%8C%20%28%EC%82%AC%EB%8B%B9%20%EB%AF%B8%EC%85%98%20%EB%A0%88%EC%9D%B4%EC%8A%A4%29&amp;dates=20261205/20261206&amp;ctz=Asia/Seoul&amp;location=%EC%82%AC%EB%8B%B9%EC%97%AD%20%EC%9D%BC%EB%8C%80%20%28%EC%A7%91%EA%B2%B0%20%EC%9E%A5%EC%86%8C%20%EC%B6%94%ED%9B%84%20%EA%B3%B5%EC%A7%80%29&amp;details=%EC%8B%9C%EA%B0%84%C2%B7%EC%A7%91%EA%B2%B0%20%EC%9E%A5%EC%86%8C%EB%8A%94%20%EC%A0%95%ED%95%B4%EC%A7%80%EB%A9%B4%20%EB%8B%A8%ED%86%A1%EB%B0%A9%EC%97%90%20%EC%98%AC%EB%A6%BD%EB%8B%88%EB%8B%A4.">
   <h2>헤브라트 송년회 (사당 미션 레이스)</h2>
   <div class=when>12월 5일 (토) 종일</div>
   <div class=where>사당역 일대 (집결 장소 추후 공지)</div>
@@ -54,15 +49,9 @@ code { font-size: 13px; word-break: break-all; }
   
   <div class=rsvp><button class="btn yes" type=button>참석</button><button class="btn no" type=button>불참</button></div>
   <p class=state hidden></p>
-  <div class=escape hidden><p>카톡 안에서는 캘린더 창이 안 떠요. 아래 버튼으로 한 번만 열어 주세요. 열리면 바로 캘린더 창이 뜹니다.</p>
+  <div class=escape hidden><p>카톡 안에서는 캘린더가 안 열려요. 아래 버튼으로 한 번만 열어 주세요. 열리면 바로 캘린더 화면이 뜹니다.</p>
     <a class="btn main go" href="#">Safari에서 열기</a>
-    <a class="btn google2" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=%ED%97%A4%EB%B8%8C%EB%9D%BC%ED%8A%B8%20%EC%86%A1%EB%85%84%ED%9A%8C%20%28%EC%82%AC%EB%8B%B9%20%EB%AF%B8%EC%85%98%20%EB%A0%88%EC%9D%B4%EC%8A%A4%29&amp;dates=20261205/20261206&amp;ctz=Asia/Seoul&amp;location=%EC%82%AC%EB%8B%B9%EC%97%AD%20%EC%9D%BC%EB%8C%80%20%28%EC%A7%91%EA%B2%B0%20%EC%9E%A5%EC%86%8C%20%EC%B6%94%ED%9B%84%20%EA%B3%B5%EC%A7%80%29&amp;details=%EC%8B%9C%EA%B0%84%C2%B7%EC%A7%91%EA%B2%B0%20%EC%9E%A5%EC%86%8C%EB%8A%94%20%EC%A0%95%ED%95%B4%EC%A7%80%EB%A9%B4%20%EB%8B%A8%ED%86%A1%EB%B0%A9%EC%97%90%20%EC%98%AC%EB%A6%BD%EB%8B%88%EB%8B%A4." target="_blank" rel="noopener">구글 캘린더로 바로 넣기<small>구글 계정이 있으면 카톡 안에서도 됩니다</small></a>
-    <p class=sm>안 되면 오른쪽 위 <b>⋯</b> → <b>다른 브라우저로 열기</b>를 눌러 주세요. 그러면 이어서 진행됩니다.</p></div>
-  <div class=btns hidden>
-    <a class="btn apple" href="2026-12-05-year-end.ics">아이폰 · 맥 캘린더<small>'Add To Calendar' 를 누르면 끝 · 알림 포함</small></a>
-    <a class="btn google" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=%ED%97%A4%EB%B8%8C%EB%9D%BC%ED%8A%B8%20%EC%86%A1%EB%85%84%ED%9A%8C%20%28%EC%82%AC%EB%8B%B9%20%EB%AF%B8%EC%85%98%20%EB%A0%88%EC%9D%B4%EC%8A%A4%29&amp;dates=20261205/20261206&amp;ctz=Asia/Seoul&amp;location=%EC%82%AC%EB%8B%B9%EC%97%AD%20%EC%9D%BC%EB%8C%80%20%28%EC%A7%91%EA%B2%B0%20%EC%9E%A5%EC%86%8C%20%EC%B6%94%ED%9B%84%20%EA%B3%B5%EC%A7%80%29&amp;details=%EC%8B%9C%EA%B0%84%C2%B7%EC%A7%91%EA%B2%B0%20%EC%9E%A5%EC%86%8C%EB%8A%94%20%EC%A0%95%ED%95%B4%EC%A7%80%EB%A9%B4%20%EB%8B%A8%ED%86%A1%EB%B0%A9%EC%97%90%20%EC%98%AC%EB%A6%BD%EB%8B%88%EB%8B%A4." target="_blank" rel="noopener">구글 캘린더<small>안드로이드 · 알림은 저장 전에 추가</small></a>
-    <a class="btn other" href="2026-12-05-year-end.ics" download="2026-12-05-year-end.ics">.ics 파일<small>삼성 캘린더 · 아웃룩 · 알림 포함</small></a>
-  </div>
+    <p class=sm>안 되면 오른쪽 위 <b>⋯</b> → <b>다른 브라우저로 열기</b>. 그러면 이어서 진행됩니다.</p></div>
 </section>
 </main><script>var RSVP_URL = "";
 (function () {
@@ -75,15 +64,15 @@ code { font-size: 13px; word-break: break-all; }
   var inKakao = /KAKAOTALK/i.test(ua);
   var em = /[?&]e=([^&]+)/.exec(location.search), wantYes = /[?&]yes=1/.test(location.search);
   if (em && !location.hash) location.hash = decodeURIComponent(em[1]);
-  function pageUrlFor(id) {  // 앵커 없이 ?e=id&yes=1 — 인앱 탈출 주소는 '#' 을 못 쓴다
+  function pageUrlFor(id) {  // 앵커 없이 ?e=id&yes=1 — 카톡 탈출 주소는 '#' 을 못 쓴다
     var plain = location.href.split("#")[0].split("?")[0];
     return plain + "?e=" + encodeURIComponent(id) + "&yes=1";
   }
-  function escapeUrl(url) {  // 시스템 브라우저로 여는 주소. iOS: x-safari-(15·17·18 에서 확인, 16 은 안 됨) · Android: Chrome intent
+  function escapeUrl(url) {  // 카톡 인앱 → 시스템 브라우저. iOS: 카카오 자체 스킴(openExternal) · Android: Chrome intent
     return android ? "intent://" + url.replace(/^https?:\/\//, "") + "#Intent;scheme=https;package=com.android.chrome;end"
-                   : "x-safari-" + url;
+                   : "kakaotalk://web/openExternal?url=" + encodeURIComponent(url);
   }
-  if (inKakao) {  // 자동 이동은 하지 않는다 — 실패하면 오류 화면만 남는다. 참석을 눌렀을 때 버튼으로 나간다
+  if (inKakao) {
     document.body.classList.add("kakao");
   } else if (/Instagram|FBAN|FBAV|NAVER\(inapp/i.test(ua)) {
     document.body.classList.add("kakao");
@@ -94,25 +83,17 @@ code { font-size: 13px; word-break: break-all; }
     if (!RSVP_URL) return;
     try { fetch(RSVP_URL, { method: "POST", mode: "no-cors", body: JSON.stringify(body) }); } catch (e) {}
   }
-  function addToCalendar(ev) {  // 참석일 때만 불린다. 기기에 맞는 길로 바로 간다.
-    var a = ev.querySelector(".apple"), g = ev.querySelector(".google");
-    ev.querySelector(".btns").hidden = false;
-    var href = (ios || mac) ? a.getAttribute("href") : android ? g.getAttribute("href") : "";
-    if (!href) return;
+  function addToCalendar(ev) {  // 참석일 때만. 버튼 없이 기기에 맞는 길로 바로 간다 (아이폰·맥·그 밖 → .ics, 안드로이드 → 구글 캘린더)
+    var href = android ? ev.getAttribute("data-google") : ev.getAttribute("data-ics");
     document.documentElement.setAttribute("data-add", href);  // 실측용 표식
     location.href = href;
   }
   document.querySelectorAll(".ev").forEach(function (ev) {
-    var a = ev.querySelector(".apple"), g = ev.querySelector(".google"), o = ev.querySelector(".other");
-    // 기기별로 첫째 버튼을 고른다: 아이폰·맥 → 애플, 안드로이드 → 구글, 나머지 → .ics
-    var first = (ios || mac) ? a : android ? g : o;
-    if (first) { first.classList.add("main"); ev.querySelector(".btns").prepend(first); }
     var key = "rsvp:" + ev.id, st = ev.querySelector(".state"), yes = ev.querySelector(".yes"), no = ev.querySelector(".no");
     function paint(choice) {
       yes.classList.toggle("on", choice === "yes"); no.classList.toggle("on", choice === "no");
       st.hidden = !choice;
-      st.textContent = choice === "yes" ? "참석으로 표시했어요. 내 캘린더에 넣습니다." : choice === "no" ? "불참으로 표시했어요." : "";
-      ev.querySelector(".btns").hidden = choice !== "yes";
+      st.textContent = choice === "yes" ? "참석으로 표시했어요. 캘린더 화면이 뜨면 추가를 눌러 주세요." : choice === "no" ? "불참으로 표시했어요." : "";
     }
     paint(load(key));
     var nameInput = ev.querySelector("input.name");
@@ -125,15 +106,14 @@ code { font-size: 13px; word-break: break-all; }
         record({ event: ev.id, title: ev.querySelector("h2").textContent, name: name, choice: choice, at: new Date().toISOString() });
         var esc = ev.querySelector(".escape");
         if (choice !== "yes") { esc.hidden = true; return; }
-        if (inKakao) {  // 인앱: 주소에 yes=1 을 남겨 어느 길로 나가든 이어지게 하고, 시스템 브라우저로 여는 버튼을 보인다
+        if (inKakao && !android) {  // 카톡 아이폰: 인앱에선 .ics 가 글자로 뜬다 → Safari 로 여는 버튼. 주소에 yes=1 을 남겨 '다른 브라우저로 열기'로 나가도 이어지게
           var go = pageUrlFor(ev.id);
           try { history.replaceState(null, "", go); } catch (e) {}
           esc.querySelector("a.go").href = escapeUrl(go);
-          esc.querySelector("a.go").textContent = android ? "Chrome에서 열기" : "Safari에서 열기";
           esc.hidden = false;
           return;
         }
-        addToCalendar(ev);
+        addToCalendar(ev);  // 안드로이드는 카톡 안에서도 구글 캘린더 링크로 바로 (https 라 인앱에서도 열린다)
       });
     });
     if (wantYes && em && decodeURIComponent(em[1]) === ev.id) {  // Safari·Chrome 으로 넘어와서 이어가기
